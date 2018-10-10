@@ -266,7 +266,6 @@ body {
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
-  color: #222;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
@@ -343,3 +342,43 @@ hr {
   top: 0;
   width: 100%;
   left: 0; }
+
+#header {
+  background: url("../img/heroBackground.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  overflow: hidden; }
+  #header article {
+    width: 60%;
+    margin: 0 auto; }
+    #header article h1 {
+      margin-bottom: 10px;
+      text-transform: uppercase; }
+    #header article img {
+      max-width: 400px;
+      width: 100%; }
+
+.main-nav {
+  display: flex;
+  margin-top: 20px;
+  align-items: center; }
+  .main-nav li {
+    list-style: none; }
+  .main-nav li:first-child {
+    margin-right: auto;
+    font-size: 200%; }
+  .main-nav a {
+    color: white;
+    display: block;
+    border-radius: 4px;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase; }
+
+a.download {
+  background: white;
+  color: #00adff;
+  box-shadow: 0 10px 10px 10px rgba(0, 12, 0, 0.2); }
