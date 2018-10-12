@@ -326,6 +326,31 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
+.main-nav {
+  display: flex;
+  margin-top: 20px;
+  align-items: center; }
+  .main-nav li {
+    list-style: none; }
+  .main-nav li:first-child {
+    margin-right: auto;
+    font-size: 200%; }
+  .main-nav a {
+    color: white;
+    display: block;
+    border-radius: 4px;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase; }
+  .main-nav a:hover, .main-nav a:active {
+    color: #00adff; }
+
+a.download {
+  background: white;
+  color: #00adff;
+  box-shadow: 0 10px 10px 10px rgba(0, 12, 0, 0.2); }
+
 #brands ul {
   padding: 20px 0;
   background: white;
@@ -447,6 +472,15 @@ h3 {
   #download .google:before {
     content: url("../img/playicon.png"); }
 
+#footer {
+  text-align: center;
+  padding: 60px 0; }
+  #footer li {
+    list-style: none; }
+    #footer li a {
+      padding: 0 20px;
+      text-transform: uppercase; }
+
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
@@ -483,26 +517,3 @@ h3 {
     #header article img {
       max-width: 400px;
       width: 100%; }
-
-.main-nav {
-  display: flex;
-  margin-top: 20px;
-  align-items: center; }
-  .main-nav li {
-    list-style: none; }
-  .main-nav li:first-child {
-    margin-right: auto;
-    font-size: 200%; }
-  .main-nav a {
-    color: white;
-    display: block;
-    border-radius: 4px;
-    padding: 10px 50px;
-    text-decoration: none;
-    font-weight: 900;
-    text-transform: uppercase; }
-
-a.download {
-  background: white;
-  color: #00adff;
-  box-shadow: 0 10px 10px 10px rgba(0, 12, 0, 0.2); }
