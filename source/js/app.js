@@ -13,13 +13,6 @@ sr.reveal('#header article.main-article', {
   duration: 300
 });
 sr.reveal('#header img.img-phone', {
-  delay: 500,
-  duration: 300,
-  origin: 'bottom',
-  distance: '100px'
-});
-
-sr.reveal('#features .h2-rocks', {
   delay: 300,
   duration: 300,
   origin: 'bottom',
@@ -27,21 +20,21 @@ sr.reveal('#features .h2-rocks', {
 });
 
 sr.reveal('#features .car', {
-  delay: 400,
+  delay: 300,
   duration: 300,
   origin: 'left',
   distance: '100px'
 });
 
 sr.reveal('#features .shoe', {
-  delay: 600,
+  delay: 400,
   duration: 300,
   origin: 'left',
   distance: '100px'
 });
 
 sr.reveal('#features .device', {
-  delay: 800,
+  delay: 500,
   duration: 300,
   origin: 'left',
   distance: '100px'
