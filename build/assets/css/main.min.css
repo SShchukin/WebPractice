@@ -199,7 +199,7 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 .wrapper {
-  width: 100%;
+  width: 90%;
   max-width: 1100px;
   margin: 0 auto; }
 
@@ -382,6 +382,9 @@ a.download {
     transform: skewY(-10deg);
     transform-origin: 100%;
     z-index: -1; }
+    @media only screen and (max-width: 680px) {
+      #features:after {
+        display: none; } }
   #features h2 {
     margin: 80px 0; }
   #features div.feature-card img {
@@ -391,12 +394,9 @@ a.download {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 30px; }
-  @media only screen and (max-width: 810px) {
+  @media only screen and (max-width: 680px) {
     .cards {
-      grid-template-columns: repeat(1, auto); }
-      .cards div.feature-card {
-        width: 80%;
-        margin: 0 auto; } }
+      grid-template-columns: repeat(1, auto); } }
 
 .feature-card {
   background: white;
@@ -422,6 +422,9 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 680px) {
+    .discountLayout {
+      flex-direction: column; } }
   .discountLayout img {
     max-width: 450px;
     width: 100%; }
@@ -429,6 +432,14 @@ h3 {
 .offer {
   width: 40%;
   margin: 0 auto; }
+  @media only screen and (max-width: 680px) {
+    .offer {
+      width: 100%;
+      text-align: center; } }
+  @media only screen and (max-width: 680px) {
+    .offer p {
+      width: 80%;
+      margin: 20px auto; } }
 
 .offer .button {
   background: #009efd;
@@ -442,8 +453,13 @@ h3 {
   text-align: center;
   background: url("../img/downloadBackground.jpg") no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 100px 0;
   margin-top: -60px; }
+  @media only screen and (max-width: 680px) {
+    #download {
+      margin-top: 75px;
+      padding: 60px 0; } }
   #download h2 {
     font-size: 68px;
     margin: 0;
@@ -452,16 +468,26 @@ h3 {
     @media only screen and (max-width: 680px) {
       #download h2 {
         font-size: 44px; } }
+    @media only screen and (max-width: 360px) {
+      #download h2 {
+        font-size: 35px; } }
   #download p {
     max-width: 450px;
     width: 100%;
     margin: 20px auto;
     font-weight: 900; }
+    @media only screen and (max-width: 680px) {
+      #download p {
+        width: 80%; } }
   #download .button {
     position: relative;
-    width: 250px;
+    max-width: 250px;
     margin: 0 15px;
     padding-left: 100px; }
+    @media only screen and (max-width: 680px) {
+      #download .button {
+        margin: 10px 15px;
+        width: 100%; } }
   #download .apple:before, #download .google:before {
     position: absolute;
     display: block;
@@ -474,12 +500,18 @@ h3 {
 
 #footer {
   text-align: center;
-  padding: 60px 0; }
+  padding: 60px 0;
+  display: flex; }
+  #footer ul {
+    padding: 0; }
   #footer li {
     list-style: none; }
     #footer li a {
       padding: 0 20px;
       text-transform: uppercase; }
+      @media only screen and (max-width: 680px) {
+        #footer li a {
+          padding: 0 5px; } }
 
 .flex-video {
   height: 0;
@@ -505,15 +537,24 @@ h3 {
   color: white;
   text-align: center;
   overflow: hidden; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 680px) {
     #header {
-      height: 120vh; } }
+      height: 600px; } }
   #header article {
     width: 60%;
     margin: 0 auto; }
-    #header article h1 {
-      margin-bottom: 10px;
-      text-transform: uppercase; }
-    #header article img {
-      max-width: 400px;
-      width: 100%; }
+    @media only screen and (max-width: 680px) {
+      #header article {
+        width: 100%; } }
+  #header h1 {
+    margin-bottom: 10px;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 680px) {
+      #header h1 {
+        margin-top: 60px; } }
+  #header img {
+    max-width: 400px;
+    width: 100%; }
+    @media only screen and (max-width: 680px) {
+      #header img {
+        margin-top: 30px; } }

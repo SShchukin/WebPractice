@@ -13,6 +13,8 @@
     transform: skewY(-10deg)
     transform-origin: 100%
     z-index: -1
+    @media only screen and (max-width: 680px)
+      display: none
 
   h2
     margin: 80px 0
@@ -24,11 +26,8 @@
   display: grid
   grid-template-columns: repeat(3,auto)
   grid-gap: 30px
-  @media only screen and (max-width: 810px)
+  @media only screen and (max-width: 680px)
     grid-template-columns: repeat(1,auto)
-    div.feature-card
-      width: 80%
-      margin: 0 auto
 
 .feature-card
   background: white

@@ -2,19 +2,27 @@
   background: url("../img/heroBackground.jpg") no-repeat
   background-size: cover
   height: 800px
-  @media only screen and (max-width: 600px)
-    height: 120vh
   color: white
   text-align: center
   overflow: hidden
+
+  @media only screen and (max-width: 680px)
+    height: 600px
 
   article
     width: 60%
     margin: 0 auto
 
-    h1
-      margin-bottom: 10px
-      text-transform: uppercase
-    img
-      max-width: 400px
+    @media only screen and (max-width: 680px)
       width: 100%
+
+  h1
+    margin-bottom: 10px
+    text-transform: uppercase
+    @media only screen and (max-width: 680px)
+      margin-top: 60px
+  img
+    max-width: 400px
+    width: 100%
+    @media only screen and (max-width: 680px)
+      margin-top: 30px
