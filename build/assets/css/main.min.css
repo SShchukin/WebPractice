@@ -326,6 +326,53 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
+#features {
+  background: #f9f9f9;
+  text-align: center;
+  position: relative; }
+  #features:after {
+    bottom: 0;
+    position: absolute;
+    background: inherit;
+    content: " ";
+    height: 400px;
+    left: 0;
+    right: 0;
+    transform: skewY(-10deg);
+    transform-origin: 100%;
+    z-index: -1; }
+  #features h2 {
+    margin: 80px 0; }
+  #features div.feature-card img {
+    max-width: 70px; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 30px; }
+  @media only screen and (max-width: 810px) {
+    .cards {
+      grid-template-columns: repeat(1, auto); }
+      .cards div.feature-card {
+        width: 80%;
+        margin: 0 auto; } }
+
+.feature-card {
+  background: white;
+  padding: 50px 40px 10px 40px;
+  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
+
+.car {
+  border-top: 4px solid #FF4136; }
+
+.shoe {
+  border-top: 4px solid #FFDC00; }
+
+.device {
+  border-top: 4px solid #4A9130; }
+  .device h3 {
+    margin: 10px 0 0; }
+
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
@@ -346,10 +393,13 @@ hr {
 #header {
   background: url("../img/heroBackground.jpg") no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 800px;
   color: white;
   text-align: center;
   overflow: hidden; }
+  @media only screen and (max-width: 600px) {
+    #header {
+      height: 120vh; } }
   #header article {
     width: 60%;
     margin: 0 auto; }
@@ -382,3 +432,19 @@ a.download {
   background: white;
   color: #00adff;
   box-shadow: 0 10px 10px 10px rgba(0, 12, 0, 0.2); }
+
+#brands ul {
+  padding: 20px 0;
+  background: white;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(6, auto); }
+  @media only screen and (max-width: 550px) {
+    #brands ul {
+      grid-template-columns: repeat(3, auto); } }
+  #brands ul li {
+    list-style: none;
+    padding: 10px 30px; }
+  #brands ul li img {
+    max-width: 100px;
+    width: 100%; }

@@ -1,0 +1,46 @@
+#features
+  background: #f9f9f9
+  text-align: center
+  position: relative
+  &:after
+    bottom: 0
+    position: absolute
+    background: inherit
+    content: " "
+    height: 400px
+    left: 0
+    right: 0
+    transform: skewY(-10deg)
+    transform-origin: 100%
+    z-index: -1
+
+  h2
+    margin: 80px 0
+
+  div.feature-card img
+    max-width: 70px
+
+.cards
+  display: grid
+  grid-template-columns: repeat(3,auto)
+  grid-gap: 30px
+  @media only screen and (max-width: 810px)
+    grid-template-columns: repeat(1,auto)
+    div.feature-card
+      width: 80%
+      margin: 0 auto
+
+.feature-card
+  background: white
+  padding: 50px 40px 10px 40px
+  box-shadow: 0 12px 10px -10px rgba(0,0,0, 0.2)
+
+.car
+  border-top: 4px solid $red
+.shoe
+  border-top: 4px solid $yellow
+.device
+  border-top: 4px solid $green
+
+  h3
+    margin: 10px 0 0
