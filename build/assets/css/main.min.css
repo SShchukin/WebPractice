@@ -413,9 +413,39 @@ h3 {
   font-size: 18px; }
 
 #download {
-  background: #5825ec;
+  color: white;
+  text-align: center;
+  background: url("../img/downloadBackground.jpg") no-repeat;
+  background-size: cover;
   padding: 100px 0;
   margin-top: -60px; }
+  #download h2 {
+    font-size: 68px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900; }
+    @media only screen and (max-width: 680px) {
+      #download h2 {
+        font-size: 44px; } }
+  #download p {
+    max-width: 450px;
+    width: 100%;
+    margin: 20px auto;
+    font-weight: 900; }
+  #download .button {
+    position: relative;
+    width: 250px;
+    margin: 0 15px;
+    padding-left: 100px; }
+  #download .apple:before, #download .google:before {
+    position: absolute;
+    display: block;
+    left: 22%; }
+  #download .apple:before {
+    content: url("../img/appleicon.png");
+    top: 18px; }
+  #download .google:before {
+    content: url("../img/playicon.png"); }
 
 .flex-video {
   height: 0;
